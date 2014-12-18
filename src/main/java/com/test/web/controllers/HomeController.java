@@ -14,4 +14,12 @@ public class HomeController {
         return modelAndView;
     }
 
+    @RequestMapping(value = "/chart")
+    public ModelAndView loadChart() {
+        ModelAndView modelAndView = new ModelAndView("chart");
+        System.out.println("Loading chart Page ===>");
+        modelAndView.addObject("message", "Hi user, is logged in");
+        return modelAndView;
+    }
+
 }

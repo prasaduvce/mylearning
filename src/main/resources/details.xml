@@ -1,0 +1,14 @@
+<company>
+    <staff>
+        <firstname>Ram</firstname>
+        <lastname>Prasad</lastname>
+        <nickname>RP</nickname>
+        <salary>1000</salary>
+    </staff>
+    <staff>
+        <firstname>Rahul</firstname>
+        <lastname>Dev</lastname>
+        <nickname>RD</nickname>
+        <salary>2000</salary>
+    </staff>
+</company>
