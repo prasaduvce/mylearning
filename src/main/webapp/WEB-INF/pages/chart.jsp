@@ -27,7 +27,7 @@
 					},
 					series: [{
 						name: 'Jane',
-						data: [1, 0, 4]
+						data: [1, 8, 4]
 					},
 					{
 						name: 'John',

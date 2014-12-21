@@ -22,4 +22,9 @@ public class HomeController {
         return modelAndView;
     }
 
+    @RequestMapping(value = "/testChart")
+    public String loadTestChart() {
+        return "testChart";
+    }
+
 }
