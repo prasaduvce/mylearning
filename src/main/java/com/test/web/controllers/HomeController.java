@@ -27,4 +27,9 @@ public class HomeController {
         return "testChart";
     }
 
+    @RequestMapping(value = "/jsonChart")
+    public String loadJsonChart() {
+        return "jsonChart";
+    }
+
 }
