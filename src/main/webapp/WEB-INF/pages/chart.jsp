@@ -22,7 +22,7 @@
 					},
 					yAxis: {
 						title: {
-							test: 'Fruit Eaten'
+							text: 'Fruit Eaten'
 						}
 					},
 					series: [{

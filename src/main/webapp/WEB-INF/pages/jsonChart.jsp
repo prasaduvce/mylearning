@@ -30,11 +30,14 @@
                     		text: '---Number of Invoices---'
                     	}
                     },
-                    series: [{}]
+                    series: [{}, {}]
                 };
                 $.getJSON('showChart',function(data) {
                     options.series[0].data = data;
                     options.series[0].name = 'Number of Consignments';
+
+                    options.series[1].data = data;
+                    options.series[1].name = 'Number of Invoices';
                     $('#container').highcharts(options);
                 }).error(function (e){
                 	alert("Exception while fetching the data."+e);
