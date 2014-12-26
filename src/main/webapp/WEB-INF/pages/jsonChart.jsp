@@ -19,6 +19,9 @@
                     title: {
                     	text: 'Consignments Processed'
                     },
+                    subtitle: {
+                    	text: 'Invoices Processed'
+                    },
                     xAxis: {
 						categories: ['','TSI/VANS','GIS','PEPPOL','NEMHANDEL'],
 						title: {
@@ -30,7 +33,7 @@
                     		text: '---Number of Invoices---'
                     	}
                     },
-                    series: [{}, {}]
+                    series: [{}, {}, {}, {}, {}]
                 };
                 $.getJSON('showChart',function(data) {
                     options.series[0].data = data;
@@ -38,9 +41,19 @@
 
                     options.series[1].data = data;
                     options.series[1].name = 'Number of Invoices';
+
+                    options.series[2].data = data;
+                    options.series[2].name = 'Number of Invoices1';
+
+                    options.series[3].data = data;
+                    options.series[3].name = 'Number of Invoices2';
+
+                    options.series[4].data = data;
+                    options.series[4].name = 'Number of Invoices3';
+
                     $('#container').highcharts(options);
-                }).error(function (e){
-                	alert("Exception while fetching the data."+e);
+                }).fail(function (){
+                	alert("Exception while fetching the data.");
                 });
 			});
 		</script>
