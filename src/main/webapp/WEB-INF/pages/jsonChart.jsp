@@ -16,10 +16,25 @@
                     chart: {
                         type: 'column'
                     },
+                    title: {
+                    	text: 'Consignments Processed'
+                    },
+                    xAxis: {
+						categories: ['','TSI/VANS','GIS','PEPPOL','NEMHANDEL'],
+						title: {
+							text: '---In Channels---'
+						}
+                    },
+                    yAxis: {
+                    	title: {
+                    		text: '---Number of Invoices---'
+                    	}
+                    },
                     series: [{}]
                 };
                 $.getJSON('showChart',function(data) {
                     options.series[0].data = data;
+                    options.series[0].name = 'Number of Consignments';
                     $('#container').highcharts(options);
                 }).error(function (e){
                 	alert("Exception while fetching the data."+e);
