@@ -23,7 +23,7 @@ public class ChartController {
         List<JSONArray> responseList = new ArrayList<JSONArray>();
         for (int i=0; i<5; i++ ) {
             JSONArray jsonArray = new JSONArray();
-            jsonArray.add(i);
+            //jsonArray.add(i);
             jsonArray.add((i+1)*10);
             responseList.add(jsonArray);
         }
